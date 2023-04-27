@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200,300;0,400;1,500,600,700,100&display=swap|Exo:100,200,300,400,500,600,700');
+
+header {
+    margin: 0;
+}
+
+.logo {
+    background: url("../images/rhys.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
