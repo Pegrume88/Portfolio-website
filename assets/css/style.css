@@ -5,9 +5,19 @@
 /*----body----------- */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #ff8c00, black) no-repeat center center fixed;
+    background: linear-gradient(to bottom, black, #2b2a29) no-repeat center center fixed;
     color: white;
+    animation: wave 6s infinite linear;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 0 -40px;
+  }
+}
 
 /*----Nav Bar----------- */
 
@@ -43,8 +53,8 @@ body {
   
   /*-------Index page ----------- */
   .container img {
-    border: 5px solid white;
-    box-shadow: 0 0 20px rgba(255,140,0,0.5);
+    border: 5px solid #ff8c00;
+    box-shadow: 0 0 20px #ff8c00;
   }
   
   .container h1 {
@@ -110,3 +120,20 @@ body {
     margin: 0 10px;
   }
   /*------------------- */
+  /* Animated background */
+
+/* Glowing effect */
+img {
+    box-shadow: 0 0 10px 0 rgba(255, 102, 0, 0.5);
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px 0 rgba(255, 102, 0, 0.5);
+    }
+    to {
+      box-shadow: 0 0 20px 0 rgba(255, 102, 0, 0.8);
+    }
+  }
+  
