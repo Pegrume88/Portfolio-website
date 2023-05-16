@@ -5,30 +5,73 @@
 /*----body----------- */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, black, #2b2a29) no-repeat center center fixed;
+    background-color: #0a0c0e;
     color: white;
-    animation: wave 6s infinite linear;
+    position: relative;
+    overflow: hidden;
+    
 }
 
-@keyframes wave {
+.raindrop {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background-color: #05d8b2;
+  animation: raindropFall 6s linear infinite;
+}
+
+@keyframes raindropFall {
   0% {
-    background-position: 0 0;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
-    background-position: 0 -40px;
+    transform: translateY(100vh);
+    opacity: 0;
   }
 }
+
 
 /*----Nav Bar----------- */
 
-.navbar {
-    background-color: #343a40;
+.thumb-img {
+  background-color: #05d8b2;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.text-color {
+  color: #05d8b2;
+}
+.navbar-brand img {
+  margin-right: 10px;
+  color: #05d8b2;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+  color: #05d8b2;
+}
+.navbar{
+    background-color: #0a0c0e;
   }
 
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #05d8b2;
   }
   
   .nav-link {
@@ -42,19 +85,19 @@ body {
   }
   
   .nav-link:hover {
-    background-color: #ff8c00;
+    background-color: #05d8b2;
   }
   
   .active {
-    background-color: #ff8c00;
+    background-color: #000000;
   }
 
   /*----------------------------------- */
   
   /*-------Index page ----------- */
   .container img {
-    border: 5px solid #ff8c00;
-    box-shadow: 0 0 20px #ff8c00;
+    border: 0.5px solid #05d8b2;
+    box-shadow: 0 0 2px #05d8b2;
   }
 
   .container-index {
@@ -63,32 +106,48 @@ body {
   
   
   .container h1 {
-    color: #ff8c00;
+    color: #05d8b2;
     font-size: 3rem;
     font-weight: bold;
     margin-top: 1rem;
   }
   
   .container h2 {
-    color: #6c757d;
+    color: #06f3eb;
     font-size: 2rem;
     font-weight: bold;
-    color: #6c757d;
+    
   }
+  .container p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: #05d8b2;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
   
   /*----------------------------- */
 
   /*-----BTN---------- */
 
   .btn-primary {
-    background-color: #ff8c00;
-    border-color: #ff8c00;
+    background-color: #05d8b2;
+    border-color: #05d8b2;
   }
   
   .btn-primary:hover {
     background-color: white;
-    border-color: #ff8c00;
-    color: #ff8c00;
+    border-color: #05d8b2;
+    color: #05d8b2;
   }
   /*------------------- */
 
@@ -96,7 +155,7 @@ body {
 /* Footer styles */
 .footer {
     background-color: #222;
-    color: #fff;
+    color: #05d8b2;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -105,13 +164,13 @@ body {
   }
 
   .footer a {
-    color: #fff;
+    color: #05d8b2;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
   
   .footer a:hover {
-    color: #f60;
+    color: #05d8b2;
   }
   
   .footer ul {
@@ -129,16 +188,16 @@ body {
 
 /* Glowing effect */
 img {
-    box-shadow: 0 0 10px 0 rgba(255, 102, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(15, 229, 208, 0.541);
     animation: glow 1s ease-in-out infinite alternate;
   }
   
   @keyframes glow {
     from {
-      box-shadow: 0 0 10px 0 rgba(255, 102, 0, 0.5);
+      box-shadow: 0 0 10px 0 rgba(15, 229, 208, 0.541);
     }
     to {
-      box-shadow: 0 0 20px 0 rgba(255, 102, 0, 0.8);
+      box-shadow: 0 0 20px 0 rgba(15, 229, 208, 0.541);
     }
   }
   
