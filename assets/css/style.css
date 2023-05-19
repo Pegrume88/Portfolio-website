@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200,300;0,400;1,500,600,700,100&display=swap|Exo:100,200,300,400,500,600,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
 
 /*----body----------- */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background-color: #0a0c0e;
     color: white;
     position: relative;
