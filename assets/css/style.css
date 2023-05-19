@@ -5,12 +5,13 @@
 html,
 body {
   height: 100%;
+  background: #000000;
 }
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Orbitron', sans-serif;
-    background-color: #0a0c0e;
+    background-color: black;
     color: white;
     position: relative;
     overflow: hidden;
@@ -56,8 +57,11 @@ body {
   margin-right: 10px;
   
 }
-
+.navbar {
+  background-color: #000000;
+}
 .navbar-brand {
+
   display: flex;
   align-items: center;
 }
@@ -76,9 +80,7 @@ body {
   text-decoration: none;
   color: #05d8b2;
 }
-.navbar{
-    background-color: #0a0c0e;
-  }
+
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -165,8 +167,9 @@ body {
 
   /* Footer styles */
 /* Footer styles */
+
 .footer {
-    background-color: #222;
+    background-color: #000000;
     color: #05d8b2;
     text-align: center;
     padding: 20px;
@@ -213,3 +216,18 @@ img {
     }
   }
   
+  /*--------Icons---------------*/
+
+  .glowing-icon {
+    animation: glow 1s ease-in-out infinite alternate;
+    padding: 4px;
+    font-size: larger;
+  }
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px 0 rgba(26, 206, 219, 0.541);
+    }
+    to {
+      box-shadow: 0 0 20px 0 rgba(26, 206, 219, 0.541);
+    }
+  }
