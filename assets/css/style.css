@@ -157,10 +157,7 @@ main.main-section {
 
   
   /*----------------------------- */
- /*--------Project page---------*/
-
-
-/*--------Project page---------*/
+ 
 
 /*--------Project page---------*/
 
@@ -180,6 +177,12 @@ main.main-section {
   max-width: 600px; /* Adjust the width as desired */
   height: auto;
   object-fit: contain;
+  border: 1.5px solid #05d8b2;
+  box-shadow: 0 0 3px #05d8b2;
+}
+.project-image {
+  
+  border-radius: 2.7%;
 }
 
 .swiper-button-next,
