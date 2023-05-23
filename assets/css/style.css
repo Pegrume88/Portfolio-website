@@ -66,6 +66,7 @@ main.main-section {
 }
 .navbar {
   background-color: #000000;
+  color: #06f3eb;
 }
 .navbar-brand {
 
@@ -84,7 +85,7 @@ main.main-section {
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
-  text-decoration: none;
+  
   color: #05d8b2;
 }
 
@@ -96,12 +97,13 @@ main.main-section {
   }
   
   .nav-link {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
+    color: #06f3eb;
+    border: #06f3eb;
+    animation: glow 1s ease-in-out infinite alternate;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 2.7%;
+    
     transition: all 0.3s ease-in-out;
   }
   
@@ -109,10 +111,7 @@ main.main-section {
     background-color: #05d8b2;
   }
   
-  .active {
-    background-color: #000000;
-  }
-
+  
   /*----------------------------------- */
   
   /*-------Index page ----------- */
@@ -274,7 +273,7 @@ main.main-section {
   /* Animated background */
 
 /* Glowing effect */
-img {
+img .active {
     box-shadow: 0 0 10px 0 rgba(15, 229, 208, 0.541);
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -295,6 +294,9 @@ img {
     padding: 4px;
     font-size: larger;
   }
+  
+  
+  
   @keyframes glow {
     from {
       box-shadow: 0 0 10px 0 rgba(26, 206, 219, 0.541);
