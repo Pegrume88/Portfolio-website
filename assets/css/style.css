@@ -109,8 +109,15 @@ main.main-section {
   
   .nav-link:hover {
     background-color: #05d8b2;
+    color: #000000;
   }
-  
+  .glowing-nav {
+    color: #2dbbd7;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .glowing-nav:hover {
+    color: black;
+  }
   
   /*----------------------------------- */
   
